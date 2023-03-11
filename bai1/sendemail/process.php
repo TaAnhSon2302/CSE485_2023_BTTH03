@@ -13,15 +13,15 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'ahres2002@gmail.com';
-    $mail->Password   = 'nitz oboe hlot eavp';
+    $mail->Username   = '@gmail.com';
+    $mail->Password   = '';
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
     $mail->CharSet = "UTF-8";
 
     // Thiết lập các thông tin về người gửi và người nhận
-    $mail->setFrom('ahres2002@gmail.com', 'Tạ Anh Sơn');
-    $mail->addAddress($to, 'Kiều Tuấn Dũng');
+    $mail->setFrom('@gmail.com', '');
+    $mail->addAddress($to, '');
 
     // Thiết lập tiêu đề và nội dung email
     $mail->isHTML(true);
